@@ -10,29 +10,30 @@ Movie.init(
       autoIncrement: true,
       primaryKey: true,
     },
-  },
-  {
-    name: {
+
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-  },
-  {
-    genre: {
+
+    poster: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-  },
-  {
+
     rating: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+
+    releaseDate: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-  },
-  {
-    duration: {
-      type: DataTypes.STRING,
-      allowNull: false,
+
+    overview: {
+      type: DataTypes.TEXT,
+      allowNull: true,
     },
   },
   {
